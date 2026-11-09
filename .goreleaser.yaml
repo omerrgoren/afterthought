@@ -16,6 +16,7 @@ brews:
   - repository:
       owner: omerrgoren
       name: homebrew-tap
+      token: "{{ .Env.HOMEBREW_TAP_GITHUB_TOKEN }}"
     homepage: https://github.com/omerrgoren/afterthought
     description: Finds what you didn't understand in AI coding sessions; weekly learning roadmap
     license: MIT
