@@ -1,0 +1,7 @@
+bin/
+dist/
+# local tooling and private planning notes, keep out of the public repo
+.claude/
+_bmad/
+_bmad-output/
+first-ideas.md

@@ -1,0 +1,22 @@
+version: 2
+project_name: afterthought
+builds:
+  - main: ./cmd/afterthought
+    binary: afterthought
+    env: [CGO_ENABLED=0]
+    goos: [darwin, linux]
+    goarch: [amd64, arm64]
+    ldflags: ["-s -w -X main.version={{.Version}}"]
+archives:
+  - formats: [tar.gz]
+    files: [LICENSE, README.md]
+checksum:
+  name_template: checksums.txt
+brews:
+  - repository:
+      owner: omerrgoren
+      name: homebrew-tap
+    homepage: https://github.com/omerrgoren/afterthought
+    description: Finds what you didn't understand in AI coding sessions; weekly learning roadmap
+    license: MIT
+    caveats: "Run `afterthought install` once to register the global hook."

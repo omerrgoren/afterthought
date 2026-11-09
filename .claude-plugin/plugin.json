@@ -1,0 +1,5 @@
+{
+  "name": "afterthought",
+  "version": "0.1.0",
+  "description": "Finds what you didn't understand in AI coding sessions and writes a weekly learning roadmap. Requires the afterthought binary on PATH (brew install afterthought)."
+}
